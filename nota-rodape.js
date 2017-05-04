@@ -1,9 +1,10 @@
 $(function(){
     $(document).ready(function(){
-        $( "<div class='blackboard'><aside><div class='container'><div class='row'><div id='target-legend' class='col-md-12'><p></p></div></div></div></aside></div>" ).appendTo('body');
+        $( "<div class='blackboard'></div><aside class='footer-note'><div class='container'><div class='row'><div id='target-legend' class='col-md-12'><p>Teste</p></div></div></div></aside>" ).appendTo('body');
         
         $('.blackboard').click(function(){
             $(this).fadeOut(200);
+            $('.footer-note').slideToggle(200);
         });
     });
     
@@ -17,6 +18,7 @@ $(function(){
         
         $('#target-legend > p').html("<strong>" + palavra + "</strong> — " + legenda + "</p>");
         $('.blackboard').fadeIn(200);
+        $('.footer-note').slideDown(200);
     });
     
     

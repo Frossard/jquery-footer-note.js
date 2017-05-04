@@ -4,5 +4,8 @@
 */
 /*body{ background: #cecece;}*/
 .blackboard{ display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(40, 40, 40, 0.5); z-index: 15;  cursor: pointer;}
-.footer-note{ display: none; width: 100%; padding: 20px 0px; position: absolute; bottom: 0; left: 0; z-index: 16; background: #fff; border-top: 2px solid #00c8c8 }
-#target-legend > p{ padding: 20px 0px; margin: 0px;}
+.footer-note{ display: none; width: 100%; max-height: 50%; padding: 20px 0px; position: absolute; bottom: 0; left: 0; z-index: 16; background: #fff; border-top: 2px solid #00c8c8; overflow-y: scroll;}
+.footer-note img, .footer-note p, .footer-note p > img{ float: left;}
+#target-legend{ padding: 20px 0px;}
+aside.footer-note-target{ display: none;}
+
